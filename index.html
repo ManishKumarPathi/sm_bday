@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Sree! 🎉</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-icon">🎂</span>
+                <span class="logo-text">Sree Lakshmi's Birthday</span>
+            </div>
+            <div class="nav-menu">
+                <a href="#" class="nav-link">Home</a>
+                <a href="#gallery" class="nav-link">Memories</a>
+                <a href="#note" class="nav-link">Note</a>
+                <div class="account-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                        <circle cx="12" cy="7" r="4"></circle>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Happy Birthday, Sree! 🎉</h1>
+            <p class="hero-subtitle">A journey through our beautiful memories together</p>
+            <button class="cta-button" onclick="scrollToGallery()">Explore Memories</button>
+        </div>
+        <div class="hero-decoration">
+            <div class="floating-element">✨</div>
+            <div class="floating-element">🎈</div>
+            <div class="floating-element">🎊</div>
+            <div class="floating-element">💝</div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery-section" id="gallery">
+        <div class="container">
+            <div class="section-header">
+                <h2>Cherished Moments</h2>
+                <p>Every picture tells a story, and every story is special</p>
+            </div>
+
+            <!-- Slideshow Container -->
+            <div class="slideshow-container">
+                <!-- Slide Progress -->
+                <div class="slide-progress">
+                    <span class="current-slide">1</span> / <span class="total-slides">10</span>
+                </div>
+
+                <!-- Slide 1: Single Hero Image -->
+                <div class="slide active">
+                    <div class="slide-content single-image">
+                        <img src="images/WhatsApp Image 2026-03-16 at 13.01.52 (5).jpeg" alt="Memory 1">
+                    </div>
+                    <div class="slide-caption">
+                        <h3>Precious Moment</h3>
+                        <p>A moment captured in time 💖</p>
+                    </div>
+                </div>
+
+                <!-- Slide 2: Specified Images -->
+                <div class="slide">
+                    <div class="slide-content grid-3">
+                        <img src="images/_DSC1441.JPG" alt="Memory 2">
+                        <img src="images/_DSC1475.JPG" alt="Memory 3">
+                        <img src="images/PXL_20241101_185336173.PORTRAIT.jpg" alt="Memory 4">
+                    </div>
+                    <div class="slide-caption">
+                        <h3>Where it all begins...</h3>
+                        <p>Can't be replaced 📸</p>
+                    </div>
+                </div>
+
+                <!-- Slide 3: 4 Images -->
+                <div class="slide">
+                    <div class="slide-content grid-4">
+                        <img src="images/_DSC1303.JPG" alt="Memory 5">
+                        <img src="images/_DSC1375.JPG" alt="Memory 6">
+                        <img src="images/_DSC1409.JPG" alt="Memory 7">
+                        <img src="images/_DSC1528.JPG" alt="Memory 8">
+                    </div>
+                    <div class="slide-caption">
+                        <h3>Adventures Together</h3>
+                        <p>Every day is an adventure with you 🌟</p>
+                    </div>
+                </div>
+
+                <!-- Slide 4: 5 Images -->
+                <div class="slide">
+                    <div class="slide-content grid-5">
+                        <img src="images/_DSC1604.JPG" alt="Memory 10">
+                        <img src="images/_DSC1912.JPG" alt="Memory 11">
+                        <img src="images/_DSC1924.JPG" alt="Memory 12">
+                        <img src="images/PXL_20241225_105245052.jpg" alt="Memory 13">
+                        <img src="images/PXL_20241226_143250604.jpg" alt="Memory 14">
+                    </div>
+                    <div class="slide-caption">
+                        <h3>Beautiful Memories</h3>
+                        <p>Time flies when we're together ⏰</p>
+                    </div>
+                </div>
+
+                <!-- Slide 5: 5 Images -->
+                <div class="slide">
+                    <div class="slide-content grid-5">
+                        <img src="images/PXL_20241228_081251426.jpg" alt="Memory 15">
+                        <img src="images/PXL_20241228_143248942.jpg" alt="Memory 16">
+                        <img src="images/WhatsApp Image 2026-03-16 at 13.01.50.jpeg" alt="Memory 17">
+                        <img src="images/WhatsApp Image 2026-03-16 at 13.01.51.jpeg" alt="Memory 18">
+                        <img src="images/WhatsApp Image 2026-03-16 at 13.01.51 (1).jpeg" alt="Memory 19">
+                    </div>
+                    <div class="slide-caption">
+                        <h3>Special Days</h3>
+                        <p>Making every moment count 🎁</p>
+                    </div>
+                </div>
+
+                <!-- Slide 6: 5 Images -->
+                <div class="slide">
+                    <div class="slide-content grid-5">
+                        <img src="images/WhatsApp Image 2026-03-16 at 13.01.51 (2).jpeg" alt="Memory 20">
+                        <img src="images/WhatsApp Image 2026-03-16 at 13.01.51 (3).jpeg" alt="Memory 21">
+                        <img src="images/WhatsApp Image 2026-03-16 at 13.01.51 (4).jpeg" alt="Memory 22">
+                        <img src="images/WhatsApp Image 2026-03-16 at 13.01.51 (5).jpeg" alt="Memory 23">
+                        <img src="images/WhatsApp Image 2026-03-16 at 13.01.51 (6).jpeg" alt="Memory 24">
+                    </div>
+                    <div class="slide-caption">
+                        <h3>Smiles & Laughter</h3>
+                        <p>You light up every room 😊</p>
+                    </div>
+                </div>
+
+                <!-- Slide 7: 5 Images -->
+                <div class="slide">
+                    <div class="slide-content grid-5">
+                        <img src="images/WhatsApp Image 2026-03-16 at 13.01.51 (7).jpeg" alt="Memory 25">
+                        <img src="images/WhatsApp Image 2026-03-16 at 13.01.51 (8).jpeg" alt="Memory 26">
+                        <img src="images/WhatsApp Image 2026-03-16 at 13.01.51 (9).jpeg" alt="Memory 27">
+                        <img src="images/WhatsApp Image 2026-03-16 at 13.01.51 (10).jpeg" alt="Memory 28">
+                        <img src="images/WhatsApp Image 2026-03-16 at 13.01.51 (11).jpeg" alt="Memory 29">
+                    </div>
+                    <div class="slide-caption">
+                        <h3>Fun Times</h3>
+                        <p>Creating memories one moment at a time 🌈</p>
+                    </div>
+                </div>
+
+                <!-- Slide 8: 5 Images -->
+                <div class="slide">
+                    <div class="slide-content grid-5">
+                        <img src="images/WhatsApp Image 2026-03-16 at 13.01.52.jpeg" alt="Memory 30">
+                        <img src="images/WhatsApp Image 2026-03-16 at 13.01.52 (1).jpeg" alt="Memory 31">
+                        <img src="images/WhatsApp Image 2026-03-16 at 13.01.52 (2).jpeg" alt="Memory 32">
+                        <img src="images/WhatsApp Image 2026-03-16 at 13.01.52 (4).jpeg" alt="Memory 33">
+                        <img src="images/WhatsApp Image 2026-03-16 at 13.01.52 (6).jpeg" alt="Memory 34">
+                    </div>
+                    <div class="slide-caption">
+                        <h3>More Beautiful Memories</h3>
+                        <p>Each picture is a treasure 💎</p>
+                    </div>
+                </div>
+
+                <!-- Slide 9: 5 Images -->
+                <div class="slide">
+                    <div class="slide-content grid-5">
+                        <img src="images/WhatsApp Image 2026-03-16 at 13.01.52 (7).jpeg" alt="Memory 35">
+                        <img src="images/WhatsApp Image 2026-03-16 at 13.01.52 (8).jpeg" alt="Memory 36">
+                        <img src="images/WhatsApp Image 2026-03-16 at 13.01.52 (9).jpeg" alt="Memory 37">
+                        <img src="images/WhatsApp Image 2026-03-16 at 13.01.52 (10).jpeg" alt="Memory 38">
+                        <img src="images/WhatsApp Image 2026-03-16 at 13.01.52 (11).jpeg" alt="Memory 39">
+                    </div>
+                    <div class="slide-caption">
+                        <h3>Unforgettable Moments</h3>
+                        <p>With you, every moment is magical ✨</p>
+                    </div>
+                </div>
+
+                <!-- Slide 10: Last Slide - Specified Images -->
+                <div class="slide">
+                    <div class="slide-content grid-3">
+                        <img src="images/PXL_20241225_105319131~2.jpg" alt="Memory Last 1">
+                        <img src="images/PXL_20241226_103040075.jpg" alt="Memory Last 2">
+                        <img src="images/WhatsApp Image 2026-03-16 at 13.01.52 (3).jpeg" alt="Memory Last 3">
+                    </div>
+                    <div class="slide-caption">
+                        <h3>To Many More Years Together</h3>
+                        <p>Happy Birthday, Sree! Here's to another amazing year! 🎂🎉💕</p>
+                    </div>
+                </div>
+
+                <!-- Navigation Buttons -->
+                <div class="slide-nav">
+                    <button class="nav-btn prev-btn" onclick="changeSlide(-1)">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="15 18 9 12 15 6"></polyline>
+                        </svg>
+                    </button>
+                    <button class="nav-btn next-btn" onclick="changeSlide(1)">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="9 18 15 12 9 6"></polyline>
+                        </svg>
+                    </button>
+                </div>
+
+                <!-- Slide Indicators -->
+                <div class="slide-indicators">
+                    <span class="indicator active" onclick="goToSlide(1)"></span>
+                    <span class="indicator" onclick="goToSlide(2)"></span>
+                    <span class="indicator" onclick="goToSlide(3)"></span>
+                    <span class="indicator" onclick="goToSlide(4)"></span>
+                    <span class="indicator" onclick="goToSlide(5)"></span>
+                    <span class="indicator" onclick="goToSlide(6)"></span>
+                    <span class="indicator" onclick="goToSlide(7)"></span>
+                    <span class="indicator" onclick="goToSlide(8)"></span>
+                    <span class="indicator" onclick="goToSlide(9)"></span>
+                    <span class="indicator" onclick="goToSlide(10)"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Birthday Note Section -->
+    <section class="note-section" id="note">
+        <div class="container">
+            <div class="note-card">
+                <div class="note-header">
+                    <h2>A Special Note for You 💝</h2>
+                </div>
+                <div class="note-content">
+                    <p class="note-greeting">Helloooooo Sree,</p>
+
+                    <p> Atleast okasarina matho jarupukuntavu anukuna nee bithday, kani time baledemo anukokunda vellipoyavu. fake bday lu maku ichi real vi intlo valatho jarupukuntunavu😛. Parledu le, oka developer and virtual ga em ivagalam ante naku ide option dorikindi.</p>
+
+                    <p> Enno pics lo evo konni pettanu paina. ofcourse inka chala important pics miss ayyayi, kani paina prati pic degara stop ayyi oka second aa moment gurtutechuko </p>
+
+                    <p>As you celebrate another year of your wonderful life, I want you to know that you deserve all the happiness in the world. May this year bring you endless joy, exciting new adventures, and all the success you've been working towards.</p>
+                    
+                    <p>On this special day, I want you to know how incredibly blessed I am to have you in my life. Every memory we've created together is a treasure I hold close to my heart</p>
+                    
+                    <p>Inka final ga India ki velinanduku baaga tinu, baaga tirigu, things sort chesko, family tho time spend chesi, appudapdu gurtunchukoni maku time ichi, fast ga return vacheyi</p>
+                    
+                                        
+                    <p class="note-closing">Happy Birthday, Sree! You are loved beyond measure. ✨🎂💕</p>
+                    
+                    <div class="note-signature">
+                        <p>With all my love,</p>
+                        <p class="signature-line">~ Manish</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>Made with ❤️ for Sree</p>
+            <p class="footer-subtitle">Happy Birthday! May all your wishes come true ✨</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
