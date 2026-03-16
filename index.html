@@ -8,6 +8,23 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Password Gate -->
+    <div class="password-gate" id="passwordGate">
+        <div class="password-card">
+            <div class="lock-icon">🔒</div>
+            <h2>This page is private</h2>
+            <p>Enter the password to continue</p>
+            <div class="password-input-wrapper">
+                <input type="password" id="passwordInput" placeholder="Enter password" autocomplete="off">
+                <button onclick="checkPassword()" id="unlockBtn">Unlock</button>
+            </div>
+            <p class="password-error" id="passwordError">Incorrect password. Try again.</p>
+        </div>
+    </div>
+
+    <!-- Main Content (hidden until password entered) -->
+    <div class="main-content" id="mainContent" style="display:none;">
+
     <!-- Navigation Bar -->
     <nav class="navbar">
         <div class="nav-container">
@@ -271,6 +288,44 @@
         </div>
     </footer>
 
+    </div><!-- end main-content -->
+
     <script src="script.js"></script>
+    <script>
+        // Password check
+        const PASS_HASH = '0f5b6483486d7860bcf3137803fbc8a6ee0ac05fa43518c9c8b1020b41b3cacb'; // 'smash_bday'
+
+        async function sha256(message) {
+            const msgBuffer = new TextEncoder().encode(message);
+            const hashBuffer = await crypto.subtle.digest('SHA-256', msgBuffer);
+            const hashArray = Array.from(new Uint8Array(hashBuffer));
+            return hashArray.map(b => b.toString(16).padStart(2, '0')).join('');
+        }
+
+        async function checkPassword() {
+            const input = document.getElementById('passwordInput').value;
+            const hash = await sha256(input);
+            if (hash === PASS_HASH) {
+                document.getElementById('passwordGate').style.display = 'none';
+                document.getElementById('mainContent').style.display = 'block';
+                sessionStorage.setItem('authenticated', 'true');
+            } else {
+                document.getElementById('passwordError').style.display = 'block';
+                document.getElementById('passwordInput').value = '';
+                document.getElementById('passwordInput').focus();
+            }
+        }
+
+        // Allow Enter key
+        document.getElementById('passwordInput').addEventListener('keydown', function(e) {
+            if (e.key === 'Enter') checkPassword();
+        });
+
+        // Check if already authenticated in this session
+        if (sessionStorage.getItem('authenticated') === 'true') {
+            document.getElementById('passwordGate').style.display = 'none';
+            document.getElementById('mainContent').style.display = 'block';
+        }
+    </script>
 </body>
 </html>
