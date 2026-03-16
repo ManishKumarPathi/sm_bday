@@ -52,12 +52,13 @@ html {
 
 .password-input-wrapper {
     display: flex;
-    gap: 0.5rem;
+    flex-direction: column;
+    gap: 0.75rem;
     margin-bottom: 1rem;
 }
 
 .password-input-wrapper input {
-    flex: 1;
+    width: 100%;
     min-width: 0;
     padding: 0.8rem 1rem;
     border: 2px solid #dfe6e9;
@@ -73,6 +74,7 @@ html {
 }
 
 .password-input-wrapper button {
+    width: 100%;
     padding: 0.8rem 1.5rem;
     background: linear-gradient(135deg, #667eea, #764ba2);
     color: white;
