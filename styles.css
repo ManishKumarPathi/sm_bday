@@ -58,6 +58,7 @@ html {
 
 .password-input-wrapper input {
     flex: 1;
+    min-width: 0;
     padding: 0.8rem 1rem;
     border: 2px solid #dfe6e9;
     border-radius: 10px;
@@ -688,6 +689,18 @@ body {
 }
 
 @media (max-width: 480px) {
+    .password-card {
+        padding: 1.5rem;
+    }
+
+    .password-input-wrapper {
+        flex-direction: column;
+    }
+
+    .password-input-wrapper button {
+        width: 100%;
+    }
+
     .hero-title {
         font-size: 2rem;
     }
